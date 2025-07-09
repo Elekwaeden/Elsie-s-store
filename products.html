@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products | Elsie's Elegance</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="product-header">
+      <h1>Explore our Collection</h1>
+      <p>Choose from our best picks below</p>
+  </header>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Elegant Handbag" />
+      <h2>Elegant Handbag</h2>
+      <p>Description for product 1.</p>
+      <span class="price">$29.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 2" />
+      <h2>Product 2</h2>
+      <p>Description for product 2.</p>
+      <span class="price">$39.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 3" />
+      <h2>Product 3</h2>
+      <p>Description for product 3.</p>
+      <span class="price">$49.99</span>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="order-form" id="order">
+   <h2>Place Your Order</h2>
+<form name="order" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="order" />
+  
+  <label>
+    Your Name:
+    <input type="text" name="name" required />
+  </label>
+  
+  <label>
+    Email:
+    <input type="email" name="email" required />
+  </label>
+
+  <label>
+    Product:
+    <select name="product" required>
+      <option value="">-- Select a Product --</option>
+      <option value="Elegant Handbag">Elegant Handbag</option>
+      <option value="Classic Heels">Classic Heels</option>
+      <option value="Gold Earrings">Gold Earrings</option>
+    </select>
+  </label>
+
+  <label>
+    Message:
+    <textarea name="message" placeholder="Any color, size, or delivery preferences?"></textarea>
+  </label>
+
+  <button type="submit" class="cta-button">Submit Order</button>
+</form>
+  </section>
+
+  <footer>
+    <p>© 2025 Elsie's Elegance. All rights reserved.</p>
+  </footer>
+</body>
+</html>
